@@ -28,4 +28,10 @@ Collection.prototype.count = function() {
 /**
  * Создание коллекции из массива значений
  */
-Collection.from = function () {}
+Collection.from = function () {
+    var collection = new Collection();
+    for (var i = 0; i < arguments.length; i++){
+        collection.value = collection.value.concat(arguments[i]);
+    }
+    return collection;
+}
