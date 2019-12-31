@@ -38,6 +38,15 @@ Collection.prototype.at = function() {
     }
 }
 
+Collection.prototype.removeAt = function() {
+    if ((arguments[0] <= 0) || (typeof arguments[0] !== 'number') || (arguments[0] > this.value.length)) {
+        return false;
+    } else {
+        this.value.splice(arguments[0] - 1, 1);
+        return true;
+    }
+}
+
 // другие методы
 
 
