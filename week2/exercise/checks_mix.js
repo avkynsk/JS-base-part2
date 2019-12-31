@@ -14,5 +14,6 @@ items.append();
 items.append(letters);
 
 //assert.equal(items.count(), 6);
+console.log(items.count());
 console.log(items.values());
 //assert.deepEqual(items.values(), [10, 20, 'a', 'b', 'c', 'd']);
